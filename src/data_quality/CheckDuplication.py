@@ -22,7 +22,7 @@ else:
     # print(path)
     df = pd.read_csv(path, index_col=0)
     result_str = '###################################################\n'\
-                 'The duplicated row number is $duplicated_row_number\n' \
+                 'The total number of duplicated rows is $duplicated_row_number\n' \
                  '###################################################\n' \
                  'The duplicated rows are: \n' \
                  '$duplicated_rows\n' \
