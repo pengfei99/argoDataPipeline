@@ -31,7 +31,9 @@ else:
                  '###################################################\n'
     temp_obj = Template(result_str)
     duplicated_row_number, output_df = remove_duplicated_rows(input_df)
-    output_df.to_csv(output_path)
+    output_df.to_csv(output_path,index=0)
     result = temp_obj.substitute(duplicated_row_number=duplicated_row_number, input_path=input_path,
                                  output_path=output_path)
     print(result)
+
+# python RemoveDuplicatedRows.py /home/pliu/data_set/argo_data_pipeline/pokemon-bad.csv /tmp/pokemon-dedup.csv

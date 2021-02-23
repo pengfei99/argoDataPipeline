@@ -52,4 +52,4 @@ else:
                                  output_path=output_path, head=head)
     print(result)
 
-# python RenameColumns.py /home/pliu/data_set/argo_data_pipeline/pokemon-bad.csv /tmp/pokemon-cleaned.csv
+# python RenameColumns.py /tmp/pokemon-dedup.csv /tmp/pokemon-cleaned.csv
