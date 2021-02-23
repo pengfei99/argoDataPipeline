@@ -36,4 +36,7 @@ else:
                                      output_file=output_file, head=head)
         print(result)
 
+# First arg is the input data path
+# Second arg is the output path
+# third arg is the prefix of the generated output file path
 # python GeneratePokemonByGeneration.py /tmp/pokemon-enriched.csv /tmp pokemon-gen
