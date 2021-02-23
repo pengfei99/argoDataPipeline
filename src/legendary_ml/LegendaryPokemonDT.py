@@ -41,8 +41,9 @@ else:
     # Generate a feature_importance
     feature_importance=list(zip(train_X, rf_clf.feature_importances_))
     # Persist the random forest model with python built in persistent module pickle
-    filename = 'random_forest_pokemon_legendary_classifier.sav'
-    output_file=output_path + "/" + filename
+    # filename = 'random_forest_pokemon_legendary_classifier.sav'
+    # output_file=output_path + "/" + filename
+    output_file=output_path
     pickle.dump(rf_clf, open(output_file, 'wb'))
     # load the model from saved file
     # loaded_model = pickle.load(open(output_file, 'rb'))
@@ -74,4 +75,4 @@ else:
     print(result)
 
 # First arg is input csv file, 2nd arg is the output path of the ml model
-# python LegendaryPokemonDT.py /tmp/pokemon-cleaned.csv /tmp
+# python LegendaryPokemonDT.py /tmp/pokemon-cleaned.csv /tmp/random_forest_pokemon_legendary_classifier.sav

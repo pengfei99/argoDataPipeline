@@ -16,7 +16,7 @@ else:
     input_path = sys.argv[1]
     output_path = sys.argv[2]
     input_df = pd.read_csv(input_path)
-    for i in range(1, 6):
+    for i in range(1, 7):
         output_df = select_df_with_condition(input_df, 'generation', i)
         head = output_df.head(5).to_string()
         output_file = output_path + "/" + "pokemon-gen-"+str(i)+".csv"
